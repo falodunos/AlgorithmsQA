@@ -83,6 +83,7 @@ An array of arrays, representing the groups of indices
 package AlgorithmsQA;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -92,7 +93,7 @@ import java.util.Map;
  *
  * @author Olugbenga.Falodun
  */
-public class ArrayMeanGrops {
+public class ArrayMeanGroups {
     public static void main(String[] args) {
         int a[][] = {{3, 3, 4, 2}, {4, 4},
         {4, 0, 3, 3}, {2, 3}, {3, 3, 3}};
@@ -117,7 +118,7 @@ public class ArrayMeanGrops {
             lst.add(innerList);
         }
 
-        System.out.println("sorted :: " + sort(lst).toString());
+        System.out.println("sorted :: " + Arrays.toString(sort(lst).toArray()));
     }
 
     private static List sort(List<List> lst) {
